@@ -1,0 +1,17 @@
+<%= form_with model: @article, local: true, data: { turbo: false } do |f| %>
+    <div>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+        <%= render partial: "partials/error_messages", locals: { model: @article, attribute: :title } %>
+    </div>
+
+    <div>
+        <%= f.label :description %>
+        <%= f.text_area :description %>
+        <%= render partial: "partials/error_messages", locals: { model: @article, attribute: :description } %>
+    </div>
+
+    <div>
+        <%= f.submit %>
+    </div>
+<% end %>

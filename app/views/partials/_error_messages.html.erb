@@ -1,0 +1,9 @@
+<% if model.errors[attribute].any? %>
+  <div class="field_with_errors">
+    <ul>
+      <% model.errors[attribute].each do |error_message| %>
+        <li><%= error_message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

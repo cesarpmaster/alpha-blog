@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+.field_with_errors {
+  color: red;
+}
+
+.flash_message {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  transition: display 2s;
+}
+
+.hide {
+  display: none;
+}
